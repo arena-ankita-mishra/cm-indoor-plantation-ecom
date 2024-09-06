@@ -1,0 +1,321 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: ; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", sans-serif !important;
+}
+.primary-font {
+  font-family: "Fraunces", sans-serif !important;
+}
+p {
+  font-family: "poppins", sans-serif !important;
+}
+a {
+  font-family: "poppins", sans-serif !important;
+}
+#navSearch {
+  border-radius: 150px;
+  width: 10rem;
+  height: 2rem;
+}
+
+.magic-bg{
+  background-color: #ffffff77;
+  backdrop-filter: blur(8px);
+}
+.subBtn {
+  width: 150px;
+  height: 50px;
+  color: #090909;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+.navbar-toggler-icon {
+  color: black;
+}
+.my-button .navbar-toggler-icon::before {
+  color: black;
+}
+.btn {
+  width: 150px;
+  height: 50px;
+  color: #090909;
+  font-size: 17px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+.btn:active {
+  color: #666;
+  box-shadow: 0px 0px 0px #c5c5c5, 0px 0px 0px #ffffff,
+    inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+:root[data-theme="light"] {
+  --text: #081707;
+  --background: #f0fbef;
+  --primary: #2acb06;
+  --secondary: #90dfcb;
+  --accent: #6dd5d3;
+}
+:root[data-theme="dark"] {
+  --text: #e9f8e8;
+  --background: #051004;
+  --primary: #58f934;
+  --secondary: #206f5b;
+  --accent: #2a9291;
+}
+body {
+  background: #f9f9f9;
+}
+.m-bg-primary {
+  background-color: var(--primary);
+} /* Carousel css */
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */ /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */ /* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+/* .carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+ */
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+} /* MARKETING CONTENT
+-------------------------------------------------- */ /* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */ /* 
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+} */
+/* rtl:end:ignore */ /* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 3rem 0; 
+}
+  /* Space out the Bootstrap <hr> more */
+/* rtl:begin:remove */
+/* .featurette-heading {
+  letter-spacing: -0.05rem;
+} */ /* rtl:end:remove */ /* RESPONSIVE CSS
+-------------------------------------------------- */
+/* @media (min-width: 40em) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+} */
+/* Carsoul css end */
+.Ourplants {
+  text-align: center;
+  word-spacing: 10px;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(165, 83%, 25%);
+}
+.ourgallery {
+  text-align: center;
+  word-spacing: 10px;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(165, 83%, 25%);
+}
+.img-ratio {
+  aspect-ratio: 1920/512;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  background-color: rgba(22, 49, 20, 0.5);
+  color: rgb(237, 227, 227);
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 4px rgb(218, 212, 212);
+  padding: 20px;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-caption {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.sliderbtn {
+  background-color: #098f26;
+  border: none;
+}
+.footer {
+  background-color: lavenderblush;
+}
+.whychoose {
+  color: hsl(165, 83%, 25%);
+  justify-content: first baseline;
+} /* nav{
+    font-size: 25px;
+  font-weight: bold;
+  position: relative;
+} */ /*nav Hover
+nav::after{
+  content: '';
+  width:11.5em;
+  height: .1em;  background-color: white;
+  position: absolute;
+  bottom:0;
+  left:0;  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+nav:hover::after{
+  transform: scaleX(1);
+}.container-fluid{
+  margin-top: 100px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 80px;
+  justify-content: center;}*/
+.signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.signup-form input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-form button:hover {
+  background-color: #218838;
+}
+
+.survival-img {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+/* Desktop mode */
+
+@media (min-width: 992px) {
+  .survival-img {
+    width: 350px;
+  }
+}
+
+/* Tablet mode */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .survival-img {
+    width: 250px;
+  }
+}
+
+/* Mobile mode */
+
+@media (max-width: 767px) {
+  .survival-img {
+    width: 150px;
+  }
+}
+
+.offer-img {
+  width: 100%;
+  margin-bottom: 30px;
+  aspect-ratio:  1.75 / 1;;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* @media (min-width: 992px) {
+  .survival-img {
+    width: 80%; 
+    margin-left: 10%; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .survival-img {
+    width: 70%; 
+    margin-left: 15%; 
+  }
+}
+
+@media (max-width: 767px) {
+  .survival-img {
+    width: 100%; 
+    margin-left: 0; 
+  }
+} */

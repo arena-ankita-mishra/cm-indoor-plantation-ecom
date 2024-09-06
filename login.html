@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sign up</title>
+    <!-- font-awesome code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/gallaryCard.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header sticky-top" style="background: #f8f9fa"></div>
+
+    <main class="vw-100 d-flex align-items-center justify-content-center my-5">
+      <div class="signup-container">
+       
+        <form action="/submit-signup" method="post" class="signup-form">
+          
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Login</button>
+          <hr>
+          <small>Don't have an account? <a class="text-decoration-none" href="sign-up.html">create one</a></small>
+        </form>
+      </div>
+    </main>
+
+    <div class="footer" style="background-color: #1c6644"></div>
+  </body>
+</html>
